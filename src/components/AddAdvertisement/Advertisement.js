@@ -30,7 +30,7 @@ function Advertisement() {
                             <label htmlFor="pettitle">Title</label>
                             <input type="text"
                              name="pettitle" 
-                             value={title.value}
+                             value={title}
                              onChange={e => setTitle(e.target.value)}
                              placeholder="Title"/>
                         </div>
