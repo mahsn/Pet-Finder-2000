@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import { Button } from '../Button/Button.js';
 import './Navbar.css'
 import '../../App.css';
-import Firebase from './../Firebase/Firebase.js';
+import Firebase from '../Firebase/Firebase.js';
 
 function Navbar(props) {
     const [click, setClick] = useState(false);
@@ -48,7 +48,12 @@ function Navbar(props) {
                    
                 </ul>
                 {
-                    button && <Button buttonStyle="assessment-btn-outline">Sign Up</Button>
+                    props.user ? (
+                            button && <Button  onClick={props.handleLogout} buttonStyle="assessment-btn-outline">Sign out</Button>    
+                    ): (
+                        button && <Button buttonStyle="assessment-btn-outline">Sign Up</Button>      
+                    )
+                   
                 }
 
             </div>
