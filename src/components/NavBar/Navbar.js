@@ -40,15 +40,15 @@ function Navbar(props) {
                             Pets
                         </Link>
                     </li>
-                    <li className="assessment-nav-item">
+                    {/* <li className="assessment-nav-item">
                         <Link to="/sign-up" className="assessment-nav-links-mobile" onClick={closeMobileBarMenu}>
                             Sign Up
                         </Link>
-                    </li>
+                    </li> */}
                     {
                         props.user ? (
                             <li className="assessment-nav-item">
-                                <Link to="/advertisiment" className="assessment-nav-links" onClick={closeMobileBarMenu}>
+                                <Link to="/advertisement" className="assessment-nav-links" onClick={closeMobileBarMenu}>
                                     Advertisement
                                 </Link>
                             </li>

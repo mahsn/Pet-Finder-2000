@@ -1,15 +1,28 @@
 import React, {useState, useEffect } from 'react'
 import Footer from '../Footer/Footer';
-import "./Advertisement";
+import "./Advertisement.scss";
+import { Button } from '../Button/Button.js';
 
 function Advertisement() {
     const [title, setTitle] = useState('');
     const [type, setType] = useState('');
     const [description, setDescrition] = useState('');
+    const [selectedFile, setSelectedFile] = useState('');
+
+    const fileupload = event => {
+        setSelectedFile({
+            selectedFile: event.target.files[0]
+        })
+    }
+
+   const savePet = () => {
+
+    }
 
     return (
         <>
             <div className="newadvertisement-container">
+            <div className="content">
                 <header>Register A New Pet</header>
                 <form action="">
                 <div className="newadvertisement-form">
@@ -39,8 +52,17 @@ function Advertisement() {
                             name="description" 
                             placeholder="Pet Description" required/>
                         </div>
+                        <div className="form-group">
+                            <label htmlFor="fileupload">Pet Image</label>
+                            <input 
+                             type="file" 
+                            onChange={fileupload}
+                            name="file" />
+                        </div>
                     </div>
                 </form>
+                    <Button onClick={savePet} buttonStyle="assessment-btn-outline">Save Pet</Button>
+                </div>
             </div> 
             <Footer/>
         </>

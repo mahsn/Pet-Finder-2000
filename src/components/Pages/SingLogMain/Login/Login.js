@@ -111,10 +111,10 @@ export default function Login(props) {
                     </div>
                 </div>
             </div>
-            <Button 
-            onClick={handleLogin} 
-            buttonStyle="assessment-btn-outline">Sing In</Button>
-                
+                <Button 
+                onClick={handleLogin} 
+                buttonStyle="assessment-btn-outline">Sing In</Button>
+            
         </div>
         <Footer/>
        </> 
