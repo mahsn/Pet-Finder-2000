@@ -63,9 +63,11 @@ function Navbar(props) {
                             </li>
                         ): (
                             <li className="assessment-nav-item">
-                            <Link to="/sign-up" className="assessment-nav-links-mobile" onClick={closeMobileBarMenu}>
-                                Sign Up
-                            </Link>
+                            <div className="assessment-nav-btn-mobile">  
+                                <Link to="/sign-up" className="assessment-nav-links-mobile" onClick={closeMobileBarMenu}>
+                                    Sign Up
+                                </Link>
+                            </div>  
                             </li>    
                         )
                     }
