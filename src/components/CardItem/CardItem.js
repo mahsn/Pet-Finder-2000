@@ -11,9 +11,11 @@ function CardItem(props) {
                         <img src={props.src} alt="Travel" className="assessment-card-item-img"/>
                     </figure>
                     <div className="assessment-card-item-info">
-                        <h5 className="assessment-card-item-text">
-                            {props.text}
-                        </h5>
+                        <ul className="assessment-card-item-text">
+                            <li><span>Title: {props.title}</span></li>
+                            <li><span>Type: {props.type}</span></li>
+                            <li><span> Description: {props.description}</span></li>
+                        </ul>
                     </div>
                 </Link>
             </li>   
