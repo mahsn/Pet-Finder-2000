@@ -40,11 +40,8 @@ function Navbar(props) {
                             Pets
                         </Link>
                     </li>
-                    {/* <li className="assessment-nav-item">
-                        <Link to="/sign-up" className="assessment-nav-links-mobile" onClick={closeMobileBarMenu}>
-                            Sign Up
-                        </Link>
-                    </li> */}
+                    
+                    
                     {
                         props.user ? (
                             <li className="assessment-nav-item">
@@ -56,6 +53,23 @@ function Navbar(props) {
                             null
                         )
                     }
+
+                    {
+                        props.user ? (
+                            <li className="assessment-nav-item">
+                                <div className="assessment-nav-btn-mobile">
+                                  <Button  onClick={props.handleLogout} >Sign out</Button>   
+                                </div>
+                            </li>
+                        ): (
+                            <li className="assessment-nav-item">
+                            <Link to="/sign-up" className="assessment-nav-links-mobile" onClick={closeMobileBarMenu}>
+                                Sign Up
+                            </Link>
+                            </li>    
+                        )
+                    }
+
                    
                 </ul>
                 {
