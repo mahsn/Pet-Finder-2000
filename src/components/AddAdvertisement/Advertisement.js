@@ -2,6 +2,8 @@ import React, {useState, useEffect } from 'react'
 import Footer from '../Footer/Footer';
 import "./Advertisement.scss";
 import { Button } from '../Button/Button.js';
+import Axios  from "axios";
+import {Link} from 'react-router-dom';
 
 function Advertisement() {
     const [title, setTitle] = useState('');
@@ -15,16 +17,14 @@ function Advertisement() {
         })
     }
 
-   const savePet = () => {
 
-    }
 
     return (
         <>
             <div className="newadvertisement-container">
             <div className="content">
                 <header>Register A New Pet</header>
-                <form action="">
+                <form action="/pets">
                 <div className="newadvertisement-form">
                         <div className="form-group">
                             <label htmlFor="pettitle">Title</label>
@@ -61,7 +61,7 @@ function Advertisement() {
                         </div>
                     </div>
                 </form>
-                    <Button onClick={savePet} buttonStyle="assessment-btn-outline">Save Pet</Button>
+                <Link to="/pets" > Pet Save</Link>
                 </div>
             </div> 
             <Footer/>

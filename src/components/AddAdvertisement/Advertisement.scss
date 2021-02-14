@@ -12,8 +12,12 @@
         margin: 30px;
         align-items: center;
 
-        Button {
-            margin: 10px;
+        a {
+            background-color:  transparent;
+            color:   #3498db;
+            padding:  8px 20px;
+            border:  1px solid var(--primaryColor);
+            transition:  all 0.3s ease-out;
         }
 
         .header {
