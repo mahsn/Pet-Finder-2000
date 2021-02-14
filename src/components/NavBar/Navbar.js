@@ -45,6 +45,17 @@ function Navbar(props) {
                             Sign Up
                         </Link>
                     </li>
+                    {
+                        props.user ? (
+                            <li className="assessment-nav-item">
+                                <Link to="/advertisiment" className="assessment-nav-links" onClick={closeMobileBarMenu}>
+                                    Advertisement
+                                </Link>
+                            </li>
+                        ): (
+                            null
+                        )
+                    }
                    
                 </ul>
                 {

@@ -6,6 +6,7 @@ import Home from './components/Pages/Home/Home.js';
 import Pets from './components/Pages/Pets/Pets.js';
 import SingLogMain from './components/Pages/SingLogMain/SingLogMain.js';
 import Firebase from './components/Firebase/Firebase.js';
+import Advertisement from './components/AddAdvertisement/Advertisement';
 
 function App() {
   const [user, setUser] = useState('');
@@ -91,6 +92,7 @@ function App() {
           <Switch>
             <Route  path="/" exact component = {Home}/>
             <Route  path="/pets" exact component = {Pets}/>
+            <Route  path="/advertisiment" exact component = {Advertisement}/>
           </Switch>
       </Router>
       ) : (
