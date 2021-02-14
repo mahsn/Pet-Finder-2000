@@ -1,11 +1,11 @@
 import React from 'react'
-
-function Products() {
+import { Link } from 'react-router-dom';
+import CardItem from '../../CardItem/CardItem';
+function Pets(props) {
     return (
-        <div>
-            <h1 className="assessment-pets">Pets</h1>            
+        <div>      
         </div>
     )
 }
 
-export default Products
+export default Pets

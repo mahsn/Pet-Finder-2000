@@ -7,7 +7,7 @@ function HomeSection() {
     return (
         <div className="assessment-home-container">
              <video src="videos/video-pet-login.mp4" autoPlay loop muted/>
-             <h1>MEET YOUR BEST</h1>
+             <h1>MEET YOUR BEST FRIEND</h1>
              <div className="assessment-home-btns">
                 <Button className="btns" buttonStyle="assessment-btn-outline"
                     buttonSize="assessment-btn-large"    
