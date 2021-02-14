@@ -84,7 +84,17 @@ function App() {
 
   return (
     <>
-      <Router>
+    {
+      user ? (
+        <Router>
+          <Navbar user={user} handleLogout={handleLogout}/>
+          <Switch>
+            <Route  path="/" exact component = {Home}/>
+            <Route  path="/pets" exact component = {Pets}/>
+          </Switch>
+      </Router>
+      ) : (
+        <Router>
           <Navbar user={user} handleLogout={handleLogout}/>
           <Switch>
             <Route  path="/" exact component = {Home}/>
@@ -92,6 +102,8 @@ function App() {
             <SingLogMain  path="/sign-up" exact component  = {SingLogMain} />
           </Switch>
       </Router>
+      )
+    }
     </>
   );
 }
