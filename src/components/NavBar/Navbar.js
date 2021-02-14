@@ -3,8 +3,9 @@ import {Link} from 'react-router-dom';
 import { Button } from '../Button/Button.js';
 import './Navbar.css'
 import '../../App.css';
+import Firebase from './../Firebase/Firebase.js';
 
-function Navbar() {
+function Navbar(props) {
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -20,6 +21,7 @@ function Navbar() {
     useEffect(() => {
         showButton();
     }, []);
+    
     
     window.addEventListener('resize', showButton);
     return (
@@ -43,10 +45,12 @@ function Navbar() {
                             Sign Up
                         </Link>
                     </li>
+                   
                 </ul>
                 {
                     button && <Button buttonStyle="assessment-btn-outline">Sign Up</Button>
                 }
+
             </div>
         </nav>   
         </>
