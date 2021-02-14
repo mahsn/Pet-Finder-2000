@@ -12,9 +12,9 @@ function CardItem(props) {
                     </figure>
                     <div className="assessment-card-item-info">
                         <ul className="assessment-card-item-text">
-                            <li><span>Title: {props.title}</span></li>
-                            <li><span>Type: {props.type}</span></li>
-                            <li><span> Description: {props.description}</span></li>
+                            <li><span>Title:</span> { props.title}</li>
+                            <li><span>Type:</span> { props.type}</li>
+                            <li><span> Description:</span> { props.description} </li>
                         </ul>
                     </div>
                 </Link>

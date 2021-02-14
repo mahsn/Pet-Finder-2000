@@ -95,10 +95,16 @@
   
   .assessment-card-item-text {
     color: #252e48;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 24px;
   }
-  
+  .assessment-card-item-text span {
+    color:  black ;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+
   @media only screen and (min-width: 1200px) {
     .content__blog__container {
       width: 84%;
