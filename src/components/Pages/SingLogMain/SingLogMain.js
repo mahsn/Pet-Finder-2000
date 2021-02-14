@@ -28,7 +28,7 @@ class SingLogMain extends React.Component {
 
     render () {
         const {isLogged} = this.state;
-        const currentStatus = isLogged ? "Login" : "Sign Up";
+        const currentStatus = isLogged ? "Sign In" : "Sign Up";
         const currentActive = isLogged ? "logged" : "signup";
         return (
             <>

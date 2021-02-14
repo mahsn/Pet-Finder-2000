@@ -111,30 +111,10 @@ export default function Login(props) {
                     </div>
                 </div>
             </div>
-            {
-                hasAccount ? (
-                    <>
-                         <Button 
-                         onClick={handleLogin} 
-                        
-                         buttonStyle="assessment-btn-outline">Sing In</Button>
-                        <p>
-                            Don't have an account ?
-                            <span onClick={() => setHasAccount(!hasAccount)}>Sing up</span>
-                        </p>
-                        
-                   </>
-                ): (
-                    <>
-                        <Button onClick={handleSingup} buttonStyle="assessment-btn-outline">Sign Up</Button>
-                        <p>
-                            Have an account ?
-                            <span onClick={() => setHasAccount(!hasAccount)}>Sing in</span>
-                        </p>
-                    </>
-                )
-            }
-            
+            <Button 
+            onClick={handleLogin} 
+            buttonStyle="assessment-btn-outline">Sing In</Button>
+                
         </div>
         <Footer/>
        </> 
