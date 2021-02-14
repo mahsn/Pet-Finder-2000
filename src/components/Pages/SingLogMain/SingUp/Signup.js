@@ -85,14 +85,14 @@ function Signup(props) {
                         <img src="images/login.png" alt="loginImg"/>
                     </div>
                     <div className="signup-form">
-                        <div className="form-group">
+                        {/* <div className="form-group">
                             <label htmlFor="username">Username</label>
                             <input type="text"
                              name="username" 
                              value={user.value}
                              onChange={e => setUser(e.target.value)}
                              placeholder="username"/>
-                        </div>
+                        </div> */}
                         <div className="form-group">
                             <label htmlFor="email">Email</label>
                             <input 
